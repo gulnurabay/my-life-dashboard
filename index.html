@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Life Dashboard</title><meta name="theme-color" content="#f6eee4">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg"><link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Quicksand:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="auth" class="authwrap"><div class="card authcard"><h1>🌸 My Life</h1><div class="sub">Войди, чтобы открыть свой дашборд</div>
+<input id="em" type="email" placeholder="Почта" autocomplete="email"><input id="pw" type="password" placeholder="Пароль (от 6 символов)" autocomplete="current-password">
+<button class="btn" id="bin">Войти</button><button class="btn alt" id="bup">Создать аккаунт</button><button class="btn alt" id="bgo">Войти через Google</button>
+<button class="lnk" id="bfg">Забыли пароль?</button><div id="aerr" class="sub"></div></div></div>
+<div class="app" id="app" hidden>
+<nav id="nav"></nav>
+<main><div class="top"><div><h2 id="ttl"></h2><div class="sub" id="sub"></div></div><div class="row"><span class="sync" id="sync">⏳ Загружаю…</span><button class="btn" data-out>Выйти</button></div></div><div id="view"></div></main>
+</div>
+<script type="module" src="app.js"></script>
+</body></html>
